@@ -10,7 +10,8 @@ class Modal {
         window.addEventListener("click", this.outsideClick.bind(this));
         document.addEventListener("closemodal", () => {
             this.close();
-        })
+        });
+        document.addEventListener("closemodal", () => this.close());
     }
 
 
